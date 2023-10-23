@@ -10,8 +10,8 @@ const FeatureMatches = () => {
         </h1>
         <div className="flex gap-8 mt-5">
           {featureMatches?.map((element, index) => {
-            console.log("element");
-            console.log(element);
+            // console.log("element");
+            // console.log(element);
             return (
               <div key={index} className="w-80 relative group ">
                 <div className="group-hover:scale-105 duration-150 ">

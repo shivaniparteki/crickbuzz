@@ -1,4 +1,7 @@
+
 import Menu from "./menu/Menu";
+
+
 
 
 export default function Layout({ children }) {
@@ -6,6 +9,7 @@ export default function Layout({ children }) {
     <>
       
       <Menu/>
+      
 
 
       {

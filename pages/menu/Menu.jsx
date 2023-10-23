@@ -16,11 +16,13 @@ const Menu = () => {
         <ul className="flex justify-center cursor-pointer gap-2 ">
           {submenu?.map((element, index) => {
             return (
-              <li key={index} className="p-4 hover:bg-green-900">
-                <Link href={`/menu/${element.route.toLowerCase()}`}>
-                  {element?.item}
-                </Link>
-              </li>
+              <div key={index} >
+                <li className="p-4 hover:bg-green-900">
+                  <Link href={`/menu/${element.route.toLowerCase()}`}>
+                    {element?.item}
+                  </Link>
+                </li>
+              </div>
             );
           })}
         </ul>
@@ -42,16 +44,15 @@ const Menu = () => {
                     className="absolute z-50 left-0  hidden group-hover:block duration-300 rounded-md bg-[#F9F9F9]"
                   >
                     {element?.dropdown?.map((dropdown, index) => {
-                     
                       return (
-                        <>
+                        <div  key={index}>
                           <li
-                            key={index}
+                           
                             className={`${element?.style} capitalize w-36 cursor-pointer px-3 py-2 text-[#000] hover:rounded-md hover:bg-[#eee] ease-in-out duration-150`}
                           >
                             {dropdown}
                           </li>
-                        </>
+                        </div>
                       );
                     })}
                   </ul>
@@ -62,7 +63,7 @@ const Menu = () => {
         </ul>
       </div>
       <div className="flex items-center">
-        <div className="p-4 hidden lg:block">
+        <div className="p-3 hidden lg:block">
           <button className=" rounded-full  px-8 py-1 bg-white">
             <span className="text-1xl font-sans  text-gray-400 capitalize  hover:text-black">
               crickbuzz plus

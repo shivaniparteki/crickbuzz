@@ -10,6 +10,11 @@ import Articletwo from "../assests/art1.webp";
 import Articlethree from "../assests/art1.webp";
 import Articlefour from "../assests/art1.webp";
 
+import specialone from "../assests/spec1.webp";
+import specialtwo from "../assests/spec1.webp";
+import specialthree from "../assests/spec1.webp";
+import specialfour from "../assests/spec1.webp";
+
 // Nav bar
 export const submenu = [
   {
@@ -121,57 +126,76 @@ export const featureMatches = [
   }
 ]
 
-export const news = [
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
-  {
-    blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
-  },
+// export const news = [
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
+//   {
+//     blog: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsamrerum reprehenderit incidunt.",
+//   },
 
-]
+// ]
 
 export const articles = [
   {
-    title:" ban vs ind 2nd odl",
+    title: " ban vs ind 2nd odl",
     img: Articleone,
-    heading:"Bangladesh clinch series after sealing another thriller",
-    dec:" Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
+    heading: "Bangladesh clinch series after sealing another thriller",
+    dec: " Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
   },
   {
-    title:" ban vs ind 2nd odl",
+    title: " ban vs ind 2nd odl",
     img: Articletwo,
-    heading:"Bangladesh clinch series after sealing another thriller",
-    dec:" Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
+    heading: "Bangladesh clinch series after sealing another thriller",
+    dec: " Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
   },
   {
-    title:" ban vs ind 2nd odl",
+    title: " ban vs ind 2nd odl",
     img: Articlethree,
-    heading:"Bangladesh clinch series after sealing another thriller",
-    dec:" Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
+    heading: "Bangladesh clinch series after sealing another thriller",
+    dec: " Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
   },
   {
-    title:" ban vs ind 2nd odl",
+    title: " ban vs ind 2nd odl",
     img: Articlefour,
-    heading:"Bangladesh clinch series after sealing another thriller",
-    dec:" Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
+    heading: "Bangladesh clinch series after sealing another thriller",
+    dec: " Rohit Sharma's unbeaten 51 went in vain In an emotional note on Instagram, the Australia batter has alleged that the review panel was out to publicly lynch him"
+  },
+]
+
+export const specials = [
+  {
+    img: specialone,
+    desc: "The series against Bangladesh will see a near full strength India side kick- starting the journey to the 2023 World CupFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into viewFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into view"
+  },
+  {
+    img: specialtwo,
+    desc: "The series against Bangladesh will see a near full strength India side kick- starting the journey to the 2023 World CupFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into viewFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into view"
+  },
+  {
+    img: specialthree,
+    desc: "The series against Bangladesh will see a near full strength India side kick- starting the journey to the 2023 World CupFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into viewFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into view"
+  },
+  {
+    img: specialfour,
+    desc: "The series against Bangladesh will see a near full strength India side kick- starting the journey to the 2023 World CupFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into viewFree agency in women's cricket is far less common than in the men's game, but change is coming - particularly with a women's IPL looming into view"
   },
 ]
