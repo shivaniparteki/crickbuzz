@@ -3,7 +3,7 @@ import User from '@/models/userModel'; // Import your User model
 import { connectToDatabase } from '@/dbconfig/dbconfig'; // Use your database connector
 
 // pages/api/signup.js
-connectToDatabase();
+// connectToDatabase();
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {

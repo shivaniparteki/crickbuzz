@@ -2,7 +2,7 @@ import User from '@/models/userModel'; // Import your User model
 import { connectToDatabase } from '@/dbconfig/dbconfig'; // Use your database connector
 import { getDataFromToken } from '@/helpers/getDataFromToken';
 
-connectToDatabase();
+// connectToDatabase();
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {

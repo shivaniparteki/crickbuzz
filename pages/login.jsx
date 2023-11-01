@@ -24,7 +24,7 @@ const Login = () => {
 
       if (response?.data?.success === true) {
         alert("Login Successful");
-        router.push("/profile");
+        router.push("/");
       } else {
         alert("Invalid Password");
       }

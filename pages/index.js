@@ -4,6 +4,7 @@ import Articles from './components/Articles'
 import FeatureMatches from './components/FeatureMatches'
 import Specials from './components/Specials'
 import News from './components/News'
+import Menu from './menu/Menu'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,17 +12,21 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home({ posts }) {
 
   return (
-    <main
-      className="max-w-[1400px] m-auto flex flex-col px-10 "
-    >
-
-      <FeatureMatches />
-      <div className='flex'>
-        <News posts={posts} />
-        <Articles />
-        <Specials />
-      </div>
-    </main>
+    <>
+      {/* <Menu /> */}
+      <main
+        className="max-w-[1400px] m-auto flex flex-col px-10 "
+      >
+        <div className='mt-12'>
+          <FeatureMatches />
+          <div className='flex'>
+            <News posts={posts} />
+            <Articles />
+            <Specials />
+          </div>
+        </div>
+      </main>
+    </>
   )
 }
 

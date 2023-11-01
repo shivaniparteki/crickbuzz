@@ -23,4 +23,6 @@ async function connectToDatabase() {
   }
 }
 
+connectToDatabase()
+
 export { connectToDatabase };

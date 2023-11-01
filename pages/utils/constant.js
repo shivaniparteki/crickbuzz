@@ -106,7 +106,7 @@ export const icon = [
   }
 ]
 
-// Home Page Components
+// Home Page Components 
 export const featureMatches = [
   {
     img: featureOne,

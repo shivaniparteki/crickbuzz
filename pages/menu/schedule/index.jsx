@@ -6,10 +6,12 @@ function Schedule() {
   return (
     <>
       <div className=" bg-gradient-to-b from-black   to-gray-700 h-[100vh]">
-        <Link href={"/"}>
-          {" "}
-          <BsArrowLeft className="text-white px-3 text-[4rem] cursor-pointer " />{" "}
-        </Link>
+      <div className="pt-[4rem]">
+          <Link href={"/"}>
+            {" "}
+            <BsArrowLeft className="text-white px-3 ml-[2.5rem] text-[4rem] cursor-pointer " />{" "}
+          </Link>
+        </div>
         <h1 className="flex justify-center text-[2rem] text-white mt-5 ">
           Schedule Page
         </h1>

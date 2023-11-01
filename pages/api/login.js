@@ -47,6 +47,14 @@ export default async function handler(req, res) {
 
       // Set the token as a cookie in the response header
       res.setHeader('Set-Cookie', `token=${token}; HttpOnly; Path=/; Max-Age=86400; SameSite=Strict`);
+      if (typeof localStorage !== 'undefined') {
+        // localStorage is available, so you can use it
+        const token = "your-token-value";
+        localStorage.setItem('token', token);
+      } else {
+        // Handle the case where localStorage is not available
+        console.error("localStorage is not available");
+      }
 
       // Return the response
       return res.status(200).json({
@@ -56,7 +64,7 @@ export default async function handler(req, res) {
 
 
 
-     
+
 
 
     } catch (error) {
