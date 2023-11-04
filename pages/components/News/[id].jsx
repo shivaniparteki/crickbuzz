@@ -12,10 +12,12 @@ function NewsDetail({ post }) {
 
   return (
     <div className=" bg-gradient-to-b from-black to-gray-600 h-[100vh]">
-      <Link href={"/"}>
-        {" "}
-        <BsArrowLeft className="text-white px-3 text-[4rem] cursor-pointer " />{" "}
-      </Link>
+      <div className="pt-[4rem]">
+          <Link href={"/"}>
+            {" "}
+            <BsArrowLeft className="text-white px-3 ml-[2.5rem] text-[4rem] cursor-pointer " />{" "}
+          </Link>
+        </div>
       <div className=" py-10">
         <h1 className="flex justify-center capitalize cursor-pointer mt-2 mb-4 text-gray-400 text-[2.5rem]  ">
           <span className="hover:text-gray-600">{post.title}</span>

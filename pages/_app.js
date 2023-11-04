@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Layout from './Layout'
 import Menu from './menu/Menu'
 import { useEffect } from 'react';
+import { SessionProvider } from 'next-auth/react';
 
 
 export default function App({ Component, pageProps }) {
@@ -14,9 +15,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {/* <Menu /> */}
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <SessionProvider session={pageProps.session}>
+        <Layout>
+          <Component  {...pageProps} />
+        </Layout>
+      </SessionProvider>
     </>
 
   )

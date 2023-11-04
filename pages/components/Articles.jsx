@@ -24,7 +24,7 @@ const Articles = () => {
                 </a>
               </h2>
 
-              <p className="my-3 text-justify text-[1.1rem]">
+              <p className="my-3 text-justify text-gray-500 text-[1.1rem]">
                {element?.dec}
               </p>
             </div>

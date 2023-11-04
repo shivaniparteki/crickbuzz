@@ -1,7 +1,19 @@
 import React from "react";
 import { featureMatches } from "../utils/constant";
+import Slider from "react-slick";
 
 const FeatureMatches = () => {
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 2000,
+  //   autoplaySpeed: 2000,
+  //   cssEase: "linear",
+  // };
+
   return (
     <>
       <div className="wrapper ">
@@ -13,18 +25,20 @@ const FeatureMatches = () => {
             // console.log("element");
             // console.log(element);
             return (
-              <div key={index} className="w-80 relative group ">
-                <div className="group-hover:scale-105 duration-150 ">
-                  <img
-                    className="w-full rounded-md "
-                    src={element?.img?.src}
-                    alt="cricket"
-                  />
+              // <Slider {...settings}>
+                <div key={index} className="w-80 relative group ">
+                  <div className="group-hover:scale-105 duration-150 ">
+                    <img
+                      className="w-full rounded-md "
+                      src={element?.img?.src}
+                      alt="cricket"
+                    />
+                  </div>
+                  <p className="absolute hover:underline w-full py-4 bottom-2 bg-[#d3d3d366] text-[#fff] text-center">
+                    {element?.desc}
+                  </p>
                 </div>
-                <p className="absolute hover:underline w-full py-4 bottom-2 bg-[#d3d3d366] text-[#fff] text-center">
-                  {element?.desc}
-                </p>
-              </div>
+              // </Slider>
             );
           })}
         </div>

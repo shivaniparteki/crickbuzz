@@ -9,8 +9,6 @@ import toast from "react-hot-toast";
 import { FaUserCircle } from "react-icons/fa";
 
 const Menu = () => {
-  const [data, setData] = useState("nothing");
-
   const router = useRouter();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -52,22 +50,8 @@ const Menu = () => {
     }
   };
 
-  const getUserDetails = async () => {
-    try {
-      console.log("Hello_________________________");
-      const res = await axios.get("/api/me");
-      router.push("/profile");
-      console.log("res.data");
-      console.log(res.data);
-      setData(res.data.data.username);
-    } catch (error) {
-      console.log("Bye_________________________");
-      console.log(error.message);
-    }
-  };
-
   return (
-    <div className="w-full flex justify-center fixed z-10  gap-16   bg-green-800   text-1xl font-sans  text-white ">
+    <div className="w-full flex justify-center fixed z-10  gap-44   bg-green-800   text-1xl font-sans  text-white ">
       <div className="hidden lg:block">
         <ul className="flex justify-center cursor-pointer gap-2 ">
           {submenu?.map((element, index) => {
@@ -112,9 +96,10 @@ const Menu = () => {
         </ul>
       </div>
       <div className="flex items-center justify-center ">
-        <button className="text-[1.5rem]" onClick={getUserDetails}>
+        <Link className="text-[1.5rem]" href="/profile">
           <FaUserCircle />
-        </button>
+        </Link>
+
         <div className="p-3  hidden lg:block">
           {/* <button className=" rounded-full  px-8 py-1 bg-white">
             <span className="text-1xl font-sans  text-gray-400 capitalize  hover:text-black">
@@ -123,7 +108,7 @@ const Menu = () => {
           </button> */}
           <button
             onClick={logout}
-            className="p-1 rounded-full px-8 py-1 mx-3 focus:outline-none focus:border-gray-600 bg-blue-500 text-[#fff]"
+            className="p-1 rounded-full px-8 py-1 mx-3 focus:outline-none focus:border-gray-600 bg-lime-600 text-[#fff]"
           >
             Logout
           </button>

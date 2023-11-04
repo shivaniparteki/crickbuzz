@@ -61,7 +61,7 @@ const Signup = () => {
     <>
       <Layout >
         <div className="flex flex-col items-center min-h-screen justify-center bg-white ">
-          <div className="wrapper w-[28rem] flex flex-col items-center font-sans text-black border border-[#eee] rounded-lg px-10 py-10 bg-white shadow-[0px_8px_40px_0px_#434549]">
+          <div className="wrapper w-[28rem] flex flex-col items-center font-sans text-black border border-[#eee] rounded-lg px-10 py-10 bg-white shadow-[0px_8px_40px_0px_#43454933]">
             <h1 className="text-4xl text-black  ">
               {loading ? "Processing" : "Signup"}
             </h1>
